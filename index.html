@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Build Your Professional Resume</h1>
+        <form id="resumeForm">
+            <!-- Contact Information -->
+            <div class="section">
+                <h2>Contact Information</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email (Gmail):</label>
+                <input type="email" id="email" placeholder="Your Gmail" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Your phone number" required>
+
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" placeholder="LinkedIn URL">
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" accept="image/*">
+            </div>
+
+            <!-- Objective Section -->
+            <div class="section">
+                <h2>Objective</h2>
+                <textarea id="objective" placeholder="Your career objective" required></textarea>
+            </div>
+
+            <!-- Education Section -->
+            <div class="section">
+                <h2>Education</h2>
+                <textarea id="education" placeholder="Your education details" required></textarea>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="section">
+                <h2>Experience</h2>
+                <textarea id="experience" placeholder="Your job experience" required></textarea>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="section">
+                <h2>Skills</h2>
+                <textarea id="skills" placeholder="Your key skills" required></textarea>
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resumePreview">
+            <h2>Preview Your Resume</h2>
+            <img id="previewPhoto" alt="Your Photo" width="150">
+            <p><strong>Name:</strong> <span id="previewName"></span></p>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="previewPhone"></span></p>
+            <p><strong>LinkedIn:</strong> <a id="previewLinkedIn" href="#" target="_blank"></a></p>
+            <p><strong>Objective:</strong> <span id="previewObjective"></span></p>
+            <p><strong>Education:</strong> <span id="previewEducation"></span></p>
+            <p><strong>Experience:</strong> <span id="previewExperience"></span></p>
+            <p><strong>Skills:</strong> <span id="previewSkills"></span></p>
+        </div>
+    </div>
+    <script src="output.js"></script>
+</body>
+</html>
